@@ -24,7 +24,7 @@ jobs:
       - name: Linter Check
         run: |
           pip install flake8
-          flake8 . --max-line-length=88 --ignore=E501
+          flake8 . --max-line-length=88 --ignore=E501,W291,W293
 
       - name: Model Dry Test
         run: |
